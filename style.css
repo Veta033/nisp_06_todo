@@ -1,0 +1,41 @@
+/* Ustawienia ogólne */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontener */
+h1, form, ul {
+    text-align: center;
+}
+
+/* Lista zadań */
+#task-list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+/* Element listy */
+#task-list li {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Input i button */
+input {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
