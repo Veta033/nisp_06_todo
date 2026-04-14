@@ -16,17 +16,22 @@ form.addEventListener("submit", function(e) {
     const text = document.createElement("span");
     text.textContent = value;
 
-    // reakcja na zaznaczenie
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Usuń";
+
+    // checkbox -> przekreślenie
     checkbox.addEventListener("change", function() {
-        if (checkbox.checked) {
-            li.classList.add("done");
-        } else {
-            li.classList.remove("done");
-        }
+        li.classList.toggle("done");
+    });
+
+    // usuwanie elementu
+    deleteBtn.addEventListener("click", function() {
+        li.remove();
     });
 
     li.appendChild(checkbox);
     li.appendChild(text);
+    li.appendChild(deleteBtn);
 
     list.appendChild(li);
 

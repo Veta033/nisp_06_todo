@@ -1,11 +1,15 @@
 /* Ustawienia ogólne */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    
+    /* gradientowe tło */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 /* Kontener */
@@ -43,4 +47,24 @@ button {
 .done {
     text-decoration: line-through;
     color: gray;
+}
+#task-list button {
+    margin-left: 10px;
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#task-list button:hover {
+    background: darkred;
+}
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
 }
